@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Ride Arabia - Premium Car Rental Services in Saudi Arabia</title>
+    <meta name="description" content="Car Ride Arabia offers premium car rental services with professional drivers in Saudi Arabia. Specializing in Hajj & Umrah transport and tourism transportation, available 24/7.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a5f7a;
+            --secondary-color: #159895;
+            --accent-color: #57c5b6;
+            --light-color: #dafffb;
+            --dark-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            color: var(--light-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            background-image: url('https://carridearabia.com/wp-content/uploads/2024/05/Umrah-and-Hajj-Car-Rental-Services-in-Makkah-and-Jeddah-Saudi-Arabia-Car-Ride-Arabia.1.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--light-color);
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .fleet {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+
+        .car-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .car-slide {
+            flex: 0 0 300px;
+            margin-right: 1rem;
+            scroll-snap-align: start;
+        }
+
+        .car-slide img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .testimonials {
+            text-align: center;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--light-color);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Car Ride Arabia</div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Premium Car Rental Services in Saudi Arabia</h1>
+            <p>Experience comfort and luxury with our professional drivers</p>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <i class="fas fa-plane-arrival"></i>
+                    <h3>Airport Transfers</h3>
+                    <p>Comfortable rides to and from airports across Saudi Arabia</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-kaaba"></i>
+                    <h3>Hajj & Umrah Trips</h3>
+                    <p>Dedicated transportation for your spiritual journey</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Tourist Transportation</h3>
+                    <p>Explore Saudi Arabia with our reliable transportation services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <h2>Our Fleet</h2>
+            <div class="car-slider">
+                <div class="car-slide">
+                    <img src="https://carridearabia.com/wp-content/uploads/2024/05/Toyota-Camry-1.webp" alt="Toyota Camry">
+                    <p>Toyota Camry</p>
+                </div>
+                <div class="car-slide">
+                    <img src="https://carridearabia.com/wp-content/uploads/2024/05/coaster.webp" alt="Coaster">
+                    <p>Coaster</p>
+                </div>
+                <div class="car-slide">
+                    <img src="https://carridearabia.com/wp-content/uploads/2024/05/Hondayi-Grand-starex-H1.webp" alt="Hyundai Grand Starex H1">
+                    <p>Hyundai Grand Starex H1</p>
+                </div>
+                <div class="car-slide">
+                    <img src="https://carridearabia.com/wp-content/uploads/2024/05/Toyota-Hiace.webp" alt="Toyota Hiace">
+                    <p>Toyota Hiace</p>
+                </div>
+                <div class="car-slide">
+                    <img src="https://carridearabia.com/wp-content/uploads/2024/05/Gmc-youkon-xl.webp" alt="GMC Yukon XL">
+                    <p>GMC Yukon XL</p>
+                </div>
+                <div class="car-slide">
+                    <img src="https://carridearabia.com/wp-content/uploads/2024/05/Hondayi-staria.webp" alt="Hyundai Staria">
+                    <p>Hyundai Staria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-card">
+                <p>"Neat and clean ride, rider is friendly. Wonderful experience overall"</p>
+                <strong>- Majid Ibrahim</strong>
+            </div>
+            <div class="testimonial-card">
+                <p>"These are good guys..!! Highly recommended to have a trip with them."</p>
+                <strong>- Hafiz Sajid Ibrahim</strong>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For bookings and inquiries:</p>
+            <p>Phone: <a href="tel:+966501729282">+966 501 729 282</a></p>
+            <p>Email: <a href="mailto:info@carridearabia.com">info@carridearabia.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Car Ride Arabia. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/carridearabia" title="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/CarRideArabia" title="Follow us on X"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/luxury_car_ride/" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/car-ride-arabia" title="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
